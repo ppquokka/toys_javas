@@ -19,12 +19,11 @@ public class MaxMins {
             }
     
             int Middle = (number1 + number2)/2 ; //Goni의 입력받는 변수 A,B를 SKY가 number1,2로 바꿈
-    
             System.out.println("중간값은 " + Middle + " 입니다." ); //Goni의 코드 middle값 구하기
 
            
             if (number1 > number2){
-            System.out.println( "최대값은 " + number1 +" 입니다.");  //Max 값 산출  
+            System.out.println( "최대값은 " + number1 +" 입니다.");  // KJW : Max 값 산출  
             } else{
             System.out.println( "최대값은 " + number2 +" 입니다.");    
             }            
