@@ -16,7 +16,7 @@ INSERT INTO user (USER_NAME, USER_ID)
 VALUES
     ('홍길동', 'P-01'),
     ('장길산', 'P-02'),
-    ('신사임당', 'P-03'),
+    ('신사임당','P-03'),
     ('이순신', 'P-04');
 
 INSERT INTO survey (SURVEY_ID, USER_ID, QUESTION_ID, ANSWER_ID)

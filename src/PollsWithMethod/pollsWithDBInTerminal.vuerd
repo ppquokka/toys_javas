@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -177,
-    "scrollLeft": -149,
+    "scrollTop": -315,
+    "scrollLeft": -196,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -97,7 +97,7 @@
           "active": false,
           "left": 27.5557,
           "top": 63,
-          "zIndex": 2,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
@@ -159,7 +159,7 @@
           "active": false,
           "left": 31.1112,
           "top": 247.6668,
-          "zIndex": 6,
+          "zIndex": 3,
           "widthName": 69.89453125,
           "widthComment": 60
         },
@@ -242,9 +242,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 28.5559,
-          "top": 418.2223,
-          "zIndex": 7,
+          "left": 46.0559,
+          "top": 531.9723,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
         },
@@ -352,7 +352,7 @@
           "active": false,
           "left": 964.3333,
           "top": 49.222,
-          "zIndex": 4,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 60
         },
@@ -402,8 +402,8 @@
           "columnIds": [
             "09267b9c-0711-45ff-b241-00228c7adbe6"
           ],
-          "x": 440.6291421875,
-          "y": 483.4723,
+          "x": 458.1291421875,
+          "y": 597.2223,
           "direction": "right"
         },
         "end": {
@@ -463,8 +463,8 @@
           "columnIds": [
             "05da4df1-0615-4ddb-8c2b-4909edd7b663"
           ],
-          "x": 234.59252109375,
-          "y": 418.2223,
+          "x": 252.09252109375,
+          "y": 531.9723,
           "direction": "top"
         },
         "constraintName": "fk_question_to_answer",

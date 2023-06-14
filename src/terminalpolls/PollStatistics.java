@@ -22,7 +22,7 @@ public class PollStatistics {
         try {
             // MySQL workbench 실행: JDBC
             // User/password와 접속 IP:port 접속
-            String url = "jdbc:mysql://127.0.0.1:3306/db_a";
+            String url = "jdbc:mysql://127.0.0.1:3306/db_b";
             String user = "root";
             String password = "!yojulab*";
 
