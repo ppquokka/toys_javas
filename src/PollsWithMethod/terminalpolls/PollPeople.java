@@ -37,12 +37,34 @@ public class PollPeople {
                     ResultSet resultSet = statement.executeQuery(query);
 
                     int number = 1;
-                    HashMap<String, String> USER_ID = new HashMap<>();
+                    HashMap<Integer, String> userIdMap = new HashMap<>();
 
                     while (resultSet.next()) {
-                        System.out.print(number + "." + resultSet.getString("USER_NAME"));
-                        number = number + 1;
+                        String userName = resultSet.getString("USER_NAME");
+                        userIdMap.put(number, userName);
+                        System.out.println(number + ". " + userName);
+                        number++;
                     }
+
+                    System.out.print("- 설문자 번호 입력 : ");
+                    int pollNumber;
+                    while (!scanner.hasNextInt()) {
+                        System.out.println("-Error- 숫자를 입력해야 합니다.");
+                        System.out.print("- 설문자 번호 입력 : ");
+                        scanner.nextLine();
+                    }
+                    pollNumber = scanner.nextInt();
+                    scanner.nextLine(); // 개행 문자 처리
+
+                    if (userIdMap.containsKey(pollNumber)) {
+                        String selectedUser = userIdMap.get(pollNumber);
+                        System.out.println("-- 설문 시작");
+                        // 설문 시작 후 처리할 내용 추가
+                    } else {
+                        System.out.println("-Error- 확인 후 입력 필요");
+                    } 
+
+
                 } else if (workKey.equals("S")) {
 
                 } else {
