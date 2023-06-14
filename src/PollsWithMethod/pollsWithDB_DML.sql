@@ -14,10 +14,10 @@ VALUES
 
 INSERT INTO user (USER_NAME, USER_ID)
 VALUES
-    ('1. 홍길동', 'P-01'),
-    ('2. 장길산', 'P-02'),
-    ('3. 신사임당', 'P-03'),
-    ('4. 이순신', 'P-04');
+    ('홍길동', 'P-01'),
+    ('장길산', 'P-02'),
+    ('신사임당', 'P-03'),
+    ('이순신', 'P-04');
 
 INSERT INTO survey (SURVEY_ID, USER_ID, QUESTION_ID, ANSWER_ID)
 VALUES 
