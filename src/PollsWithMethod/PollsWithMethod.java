@@ -19,7 +19,7 @@ public static void main(String[] args) {
     try {
         // - MySQL workbench 실행 : JDBC
         // - user, password와 접속  IP:port 접속
-        String url = "JDBC:MySQL;//127.0.0.1:3306/DB_이름";  // 기존 MySQL 그대로 사용. DB만 변경(우선 DB_'이름'작성)
+        String url = "JDBC:MySQL://127.0.0.1:3306/DB_a";  // 기존 MySQL 그대로 사용. DB만 변경(우선 DB_'이름'작성)
         String user = "root";
         String password = "!yojulab*";
         
