@@ -1,6 +1,7 @@
 import polls.PollInitailArrays;
 import polls.PollScanners;
-import polls.PollStatistics;
+import terminalpolls.PollStatistics;
+
 import java.util.Scanner;
 
 public class PollsWithMethod {
