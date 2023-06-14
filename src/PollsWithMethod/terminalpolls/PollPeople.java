@@ -63,9 +63,37 @@ public class PollPeople {
                     } else {
                         System.out.println("-Error- 확인 후 입력 필요");
                     } 
+                  query = "";
+                    ResultSet resultSet = statement.executeQuery(query) ;
 
+                    int number = 1;
+                    Statement statement2 = connection.createStatement();
+                    ResultSet resultSet2;
+                    String query2;
+                    HashMap<String, String> carNumberMap = new HashMap<>();
+                    while (resultSet.next()) {
+                        System.out.print(number + ". " +
+                            resultSet.getString("COMPANY") + " - " +
+                            resultSet.getString("CAR_NAME") + ": ");
+                        String carInforId = resultSet.getString("CAR_INFOR_ID");
+                        carNumberMap.put(String.valueOf(number), carInforId);
+                        query2 = "SELECT T_OPT_INFO.OPTION_NAME\n" + //
+                                "FROM option_infors AS T_OPT_INFO\n" + //
+                                "\tinner join `options` AS T_OPTS\n" + //
+                                "    ON T_OPT_INFO.OPTION_INFOR_ID = T_OPTS.OPTION_INFOR_ID\n" + //
+                                "    AND T_OPTS.CAR_INFOR_ID = '"+carInforId+"'";
+                        resultSet2 = statement2.executeQuery(query2);
+                        while(resultSet2.next()){
+                            System.out.print(resultSet2.getString("OPTION_NAME")+",");
+                        }
+                        number = number + 1;
+                        System.out.println();
+                    }
+
+                  
 
                 } else if (workKey.equals("S")) {
+                    
 
                 } else {
                     System.out.println("--- 작업 키 확인 : 입력한 값 : " + workKey);
