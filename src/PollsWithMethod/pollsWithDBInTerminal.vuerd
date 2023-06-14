@@ -95,9 +95,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 42,
+          "left": 27.5557,
           "top": 63,
-          "zIndex": 80,
+          "zIndex": 87,
           "widthName": 60,
           "widthComment": 60
         },
@@ -157,9 +157,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 40,
-          "top": 271,
-          "zIndex": 50,
+          "left": 31.1112,
+          "top": 247.6668,
+          "zIndex": 86,
           "widthName": 69.89453125,
           "widthComment": 60
         },
@@ -219,9 +219,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 34.1114,
+          "left": 28.5559,
           "top": 418.2223,
-          "zIndex": 79,
+          "zIndex": 88,
           "widthName": 60,
           "widthComment": 60
         },
@@ -329,7 +329,7 @@
           "active": false,
           "left": 964.3333,
           "top": 49.222,
-          "zIndex": 85,
+          "zIndex": 89,
           "widthName": 60,
           "widthComment": 60
         },
@@ -353,8 +353,8 @@
           "columnIds": [
             "577473d4-acee-447b-bc87-588dc7a4dbeb"
           ],
-          "x": 452.0732421875,
-          "y": 326,
+          "x": 443.1844421875,
+          "y": 302.66679999999997,
           "direction": "right"
         },
         "end": {
@@ -379,7 +379,7 @@
           "columnIds": [
             "09267b9c-0711-45ff-b241-00228c7adbe6"
           ],
-          "x": 435.34919296875,
+          "x": 429.79369296875,
           "y": 473.2223,
           "direction": "right"
         },
@@ -405,7 +405,7 @@
           "columnIds": [
             "dc73b0fc-d337-4fa6-9168-8dfcbc4cdb07"
           ],
-          "x": 446.85595703125,
+          "x": 432.41165703125,
           "y": 118,
           "direction": "right"
         },
