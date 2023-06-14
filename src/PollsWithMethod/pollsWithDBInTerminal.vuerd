@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -315,
-    "scrollLeft": -196,
+    "scrollTop": -93.99999999999997,
+    "scrollLeft": -1,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -95,9 +95,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 27.5557,
-          "top": 63,
-          "zIndex": 1,
+          "left": 376.3057,
+          "top": 45.5,
+          "zIndex": 7,
           "widthName": 60,
           "widthComment": 60
         },
@@ -157,9 +157,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 31.1112,
-          "top": 247.6668,
-          "zIndex": 3,
+          "left": 299.8612,
+          "top": 237.6668,
+          "zIndex": 33,
           "widthName": 69.89453125,
           "widthComment": 60
         },
@@ -215,36 +215,13 @@
               "widthDefault": 60
             },
             "id": "09267b9c-0711-45ff-b241-00228c7adbe6"
-          },
-          {
-            "name": "QUESTION_ID",
-            "comment": "문항_id",
-            "dataType": "VARCHAR(500)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 90.12451171875,
-              "widthComment": 60,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "05da4df1-0615-4ddb-8c2b-4909edd7b663"
           }
         ],
         "ui": {
           "active": false,
-          "left": 46.0559,
-          "top": 531.9723,
-          "zIndex": 5,
+          "left": 789.8059,
+          "top": 693.2223,
+          "zIndex": 46,
           "widthName": 60,
           "widthComment": 60
         },
@@ -350,14 +327,76 @@
         ],
         "ui": {
           "active": false,
-          "left": 964.3333,
-          "top": 49.222,
+          "left": 1114.3333,
+          "top": 90.472,
           "zIndex": 6,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
         "id": "66f13b14-a12c-47d1-868d-d2c2d9ec156e"
+      },
+      {
+        "name": "QNA_ID",
+        "comment": "문항과 답항_ID",
+        "columns": [
+          {
+            "name": "QUESTION_ID",
+            "comment": "문항_id",
+            "dataType": "VARCHAR(500)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 90.12451171875,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "40647539-e06d-4ffe-b8d1-8bcc3014fca2"
+          },
+          {
+            "name": "ANSWER_ID",
+            "comment": "답항_id",
+            "dataType": "VARCHAR(500)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 79.2890625,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "885936f5-edec-48e7-a077-be19eaaf48cf"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 209.75,
+          "top": 536.75,
+          "zIndex": 47,
+          "widthName": 60,
+          "widthComment": 90.841796875
+        },
+        "visible": true,
+        "id": "57da3760-b170-460d-9610-6aa2d6b4712c"
       }
     ],
     "indexes": []
@@ -376,8 +415,8 @@
           "columnIds": [
             "577473d4-acee-447b-bc87-588dc7a4dbeb"
           ],
-          "x": 443.1844421875,
-          "y": 302.66679999999997,
+          "x": 711.9344421875,
+          "y": 292.66679999999997,
           "direction": "right"
         },
         "end": {
@@ -385,8 +424,8 @@
           "columnIds": [
             "5b234e32-054c-4de3-800f-99d9bf320ed3"
           ],
-          "x": 964.3333,
-          "y": 124.72200000000001,
+          "x": 1114.3333,
+          "y": 203.72199999999998,
           "direction": "left"
         },
         "constraintName": "fk_question_to_survey",
@@ -402,8 +441,8 @@
           "columnIds": [
             "09267b9c-0711-45ff-b241-00228c7adbe6"
           ],
-          "x": 458.1291421875,
-          "y": 597.2223,
+          "x": 1191.0436929687498,
+          "y": 748.2223,
           "direction": "right"
         },
         "end": {
@@ -411,9 +450,9 @@
           "columnIds": [
             "c1004f6c-8168-4168-b878-09fd8760e593"
           ],
-          "x": 964.3333,
-          "y": 175.05533333333335,
-          "direction": "left"
+          "x": 1320.36992109375,
+          "y": 241.47199999999998,
+          "direction": "bottom"
         },
         "constraintName": "fk_answer_to_survey",
         "visible": true,
@@ -428,8 +467,8 @@
           "columnIds": [
             "dc73b0fc-d337-4fa6-9168-8dfcbc4cdb07"
           ],
-          "x": 432.41165703125,
-          "y": 118,
+          "x": 781.16165703125,
+          "y": 100.5,
           "direction": "right"
         },
         "end": {
@@ -437,8 +476,8 @@
           "columnIds": [
             "f3220fdc-a260-4b0d-8929-bd82b32e33e6"
           ],
-          "x": 964.3333,
-          "y": 74.38866666666667,
+          "x": 1114.3333,
+          "y": 128.22199999999998,
           "direction": "left"
         },
         "constraintName": "fk_user_to_survey",
@@ -454,22 +493,48 @@
           "columnIds": [
             "577473d4-acee-447b-bc87-588dc7a4dbeb"
           ],
-          "x": 237.14782109375,
-          "y": 357.66679999999997,
+          "x": 505.89782109375,
+          "y": 347.66679999999997,
           "direction": "bottom"
         },
         "end": {
-          "tableId": "4b3a894c-d10c-48f2-81db-76966fac9d97",
+          "tableId": "57da3760-b170-460d-9610-6aa2d6b4712c",
           "columnIds": [
-            "05da4df1-0615-4ddb-8c2b-4909edd7b663"
+            "40647539-e06d-4ffe-b8d1-8bcc3014fca2"
           ],
-          "x": 252.09252109375,
-          "y": 531.9723,
+          "x": 415.78662109375,
+          "y": 536.75,
           "direction": "top"
         },
-        "constraintName": "fk_question_to_answer",
+        "constraintName": "fk_question_to_qna_id",
         "visible": true,
-        "id": "8bc65e17-949c-43f2-931d-fbab0712b48e"
+        "id": "b419ba6d-cab0-4095-8a4c-57c6d8061c1e"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "4b3a894c-d10c-48f2-81db-76966fac9d97",
+          "columnIds": [
+            "09267b9c-0711-45ff-b241-00228c7adbe6"
+          ],
+          "x": 789.8059,
+          "y": 748.2223,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "57da3760-b170-460d-9610-6aa2d6b4712c",
+          "columnIds": [
+            "885936f5-edec-48e7-a077-be19eaaf48cf"
+          ],
+          "x": 621.8232421875,
+          "y": 591.75,
+          "direction": "right"
+        },
+        "constraintName": "fk_answer_to_qna_id",
+        "visible": true,
+        "id": "c66ec654-9c69-4a2d-b2ed-2e75cadfc9df"
       }
     ]
   }

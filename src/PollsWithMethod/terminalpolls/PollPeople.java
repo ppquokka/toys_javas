@@ -83,11 +83,12 @@ public class PollPeople {
                                 "FROM answer\n";
                         resultSet3 = statement2.executeQuery(query2);
                         while(resultSet3.next()){
-                        System.out.print(resultSet3.getString("ANSWER")+",");
-                         } 
-                    num = num + 1;
-                    System.out.println();
-                 }
+                        System.out.print(resultSet3.getString("ANSWER"));
+                        }          
+                     num = num +1;
+                     System.out.println();
+                        
+                    }
                 } else if (workKey.equals("S")) {
 
 
