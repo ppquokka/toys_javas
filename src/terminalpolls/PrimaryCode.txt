@@ -1,0 +1,19 @@
+int number = 1;
+                        HashMap<Integer, String> userIdMap = new HashMap<>();
+                        while (resultSet.next()) {
+                            String userName = resultSet.getString("USER_NAME");
+                            userIdMap.put(number, userName);
+                            System.out.println(number + ". " + userName);
+                            number++;
+                        }
+
+
+위의 코드는 데이터베이스에서 조회한 사용자 명단을 숫자와 함께 출력하고, 각 숫자에 해당하는 사용자 이름을 userIdMap이라는 HashMap에 저장하는 부분입니다.
+int number = 1;은 사용자 목록을 출력할 때 사용될 번호를 초기화합니다.
+HashMap<Integer, String> userIdMap = new HashMap<>();은 숫자와 사용자 이름을 매핑하기 위한 HashMap을 생성합니다. Integer 타입의 키로 숫자를, String 타입의 값으로 사용자 이름을 저장합니다.
+while (resultSet.next()) { ... }은 resultSet에서 데이터를 하나씩 읽어오면서 반복합니다. 각 반복마다 한 명의 사용자 정보가 처리됩니다.
+String userName = resultSet.getString("USER_NAME");은 데이터베이스에서 "USER_NAME" 컬럼의 값을 읽어와서 userName 변수에 저장합니다.
+userIdMap.put(number, userName);은 userIdMap에 숫자와 사용자 이름을 매핑하여 저장합니다. 즉, 숫자를 키로 사용하고, 해당 숫자에 대응하는 사용자 이름을 값으로 저장합니다.
+System.out.println(number + ". " + userName);은 현재 숫자와 사용자 이름을 출력합니다. 숫자와 사용자 이름은 "숫자. 사용자이름" 형식으로 출력됩니다.
+number++;은 숫자를 1씩 증가시켜 다음 사용자의 번호를 준비합니다.
+위의 코드는 데이터베이스에서 조회한 사용자 목록을 숫자와 함께 출력하고, 각 숫자에 해당하는 사용자 이름을 userIdMap에 저장하는 역할을 합니다. 이후 설문 조사에서 사용자를 선택하기 위해 사용자 목록을 보여줄 때 이 userIdMap을 활용할 수 있습니다.                        

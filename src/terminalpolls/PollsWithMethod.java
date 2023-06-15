@@ -48,6 +48,7 @@ public class PollsWithMethod {
                         query = "SELECT USER_NAME FROM USER";
                         ResultSet resultSet = statement.executeQuery(query);
 
+                        // 데이터베이스에서 조회한 사용자 명단을 숫자와 함께 출력하고, 각 숫자에 해당하는 사용자 이름을 userIdMap이라는 HashMap에 저장하는 부분
                         int number = 1;
                         HashMap<Integer, String> userIdMap = new HashMap<>();
                         while (resultSet.next()) {
@@ -77,6 +78,7 @@ public class PollsWithMethod {
                             ResultSet resultSet2 = statement.executeQuery(query);
                             int num = 1;
 
+                            // 데이터베이스에서 질문 목록을 조회하고, 각 질문의 번호와 질문 ID를 questionNumMap에 저장
                             Statement statement2 = connection.createStatement();
                             ResultSet resultSet3;
                             String query2;
@@ -152,6 +154,7 @@ public class PollsWithMethod {
         System.out.println();
     }
 
+    // 주어진 질문 번호에 해당하는 질문을 반환하는 메소드
     private String getQuestion(int questionNum) {
         switch (questionNum) {
             case 1:
@@ -167,6 +170,7 @@ public class PollsWithMethod {
         }
     }
 
+    // 주어진 질문 번호에 해당하는 최대 답변 번호를 반환하는 메소드
     private int getMaxAnswerNum(int questionNum) {
         int maxAnswerNum = 0;
         for (String answer : answers) {
@@ -178,12 +182,13 @@ public class PollsWithMethod {
         return maxAnswerNum;
     }
 
-private int[] countAnswerOptions() {
-    int[] answerCounts = new int[4];
-    for (String answer : answers) {
-        int answerNum = Integer.parseInt(answer);
-        answerCounts[answerNum - 1]++;
+    // 각 답변 옵션의 개수를 세는 메소드
+    private int[] countAnswerOptions() {
+        int[] answerCounts = new int[4];
+        for (String answer : answers) {
+            int answerNum = Integer.parseInt(answer);
+            answerCounts[answerNum - 1]++;
+        }
+        return answerCounts;
     }
-    return answerCounts;
-}
 }

@@ -152,6 +152,7 @@ public class PollList {
         System.out.println();
     }
 
+    // 질문 번호에 따라 질문을 반환하는 메서드
     private String getQuestion(int questionNum) {
         switch (questionNum) {
             case 1:
@@ -167,6 +168,7 @@ public class PollList {
         }
     }
 
+    // 주어진 질문에 대해 설문 참여자들이 가장 많이 선택한 답의 번호를 반환하는 메서드
     private int getMaxAnswerNum(int questionNum) {
         int maxAnswerNum = 0;
         for (String answer : answers) {
@@ -178,12 +180,13 @@ public class PollList {
         return maxAnswerNum;
     }
 
-private int[] countAnswerOptions() {
-    int[] answerCounts = new int[4];
-    for (String answer : answers) {
-        int answerNum = Integer.parseInt(answer);
-        answerCounts[answerNum - 1]++;
+    // 각 답변 옵션별로 선택된 횟수를 계산하여 배열로 반환하는 메서드
+    private int[] countAnswerOptions() {
+        int[] answerCounts = new int[4];
+        for (String answer : answers) {
+            int answerNum = Integer.parseInt(answer);
+            answerCounts[answerNum - 1]++;
+        }
+        return answerCounts;
     }
-    return answerCounts;
-}
 }
