@@ -1,4 +1,4 @@
-package terminalpolls;
+package PollsWithMethod.terminalpolls;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

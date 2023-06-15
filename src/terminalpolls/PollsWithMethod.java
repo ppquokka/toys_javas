@@ -7,17 +7,17 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class PollList {
+public class PollsWithMethod {
     private String[] answers;
     private boolean pollInProgress; // 설문 진행 중인지 여부를 나타내는 변수
 
-    public PollList(String[] answers) {
+    public PollsWithMethod(String[] answers) {
         this.answers = answers;
         this.pollInProgress = false;
     }
 
     public static void main(String[] args) {
-        PollList pollList = new PollList(new String[] { "1", "2", "3", "4" });
+        PollsWithMethod pollList = new PollsWithMethod(new String[] { "1", "2", "3", "4" });
         pollList.run();
     }
 
